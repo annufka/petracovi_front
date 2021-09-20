@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.css';
+
+body, html {
+  font-family: Roboto, sans-serif !important;
+}
+
+header ul{
+  padding: 0px !important;
+}
+
+.mat-body p, .mat-body-1 p, .mat-typography p {
+  margin: 0px !important;
+}

@@ -1,0 +1,36 @@
+.carousel-item {
+  margin-right: auto;
+}
+
+carousel .news_image {
+  line-height: 200px;
+}
+
+carousel .news_image .card-img {
+  vertical-align: middle;
+}
+
+.card-body h5 {
+  font-size: 0.9em;
+}
+
+.card-body p {
+  font-size: 0.8em;
+}
+
+::ng-deep .news_carousel .carousel-control.left, ::ng-deep .news_carousel .carousel-control.right {
+  display: none !important;
+}
+
+::ng-deep .carousel-indicators {
+  margin: auto;
+  bottom: -30px;
+}
+
+::ng-deep .carousel-indicators li {
+  background-color: #002aac;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
