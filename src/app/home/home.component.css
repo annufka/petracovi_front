@@ -1,0 +1,75 @@
+/*слайдер*/
+slide img {
+  height: calc(100vw * 5 / 24);
+  max-height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*Распродажа*/
+.sale {
+  margin-top: 45px;
+}
+
+/*Новинки*/
+
+/*Просмотреное*/
+
+/*Категории на главной*/
+.all_category .item {
+  display: block;
+}
+
+.all_category .item img {
+  display: block;
+  width: 120px;
+  margin: 0 auto;
+}
+
+.all_category span {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 10px 0;
+}
+
+.all_category a:hover {
+  color: #2ba700;
+}
+
+.all_category ul {
+  padding: 0;
+}
+
+.all_category li {
+  list-style: none;
+  padding: 3px 0;
+  font-size: 0.9em;
+}
+
+/*Новости*/
+
+
+/*почему мы*/
+.advantages {
+  margin-top: 80px;
+}
+
+.advantages .f-column:hover p {
+  color: #2ba700;
+}
+
+/*о магазине*/
+.about {
+  line-height: 1.5em;
+  font-size: 1.1em;
+}
+
+.about p {
+  color: #636363;
+}
+
+.about p strong {
+  color: black;
+}

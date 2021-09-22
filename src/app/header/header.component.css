@@ -1,0 +1,219 @@
+/*header*/
+.mat-typography p {
+  margin: 0 0;
+}
+
+/*первая полоса хедера (белая)*/
+#first_nav a, #first_nav li a, #first_nav {
+  color: #002aac;
+}
+
+#first_nav a:hover, #first_nav li a:hover, #first_nav .nav-tabs .nav-link.active {
+  color: #2ba700;
+}
+
+/*график работы*/
+#workweek {
+  font-size: 10px !important;
+}
+
+#worktime {
+  font-size: 14px !important;
+  text-align: center;
+}
+
+#first_nav .nav-tabs, #first_nav .nav-tabs .nav-link:hover, #first_nav .nav-tabs .nav-link.active {
+  border: none;
+}
+
+/*второй хедер на фоне (зеленый)*/
+#second_nav {
+  background-color: #2ba700;
+}
+
+#second_nav a, #second_nav li a, #second_nav {
+  color: #fff;
+}
+
+#second_nav li a {
+  padding: 0;
+}
+
+/*выпвдающие меню и вложения в них*/
+.dropdown-menu {
+  border-radius: 0;
+  margin: 0.70em 0 0 !important;
+  border-top: none;
+}
+
+.dropdown-menu li a {
+  color: #002aac !important;
+}
+
+.dropdown-submenu {
+  height: 100%;
+}
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin: 0 !important;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu > a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #ccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+
+.dropdown-submenu:hover > a:after {
+  border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+  float: none;
+}
+
+.dropdown-submenu.pull-left > .dropdown-menu {
+  left: -100%;
+}
+
+/*поиск*/
+.search {
+  position: relative;
+}
+
+.search input {
+  width: 100%;
+  height: 42px;
+  padding-left: 10px;
+  border: 2px solid #2ba700;
+  border-radius: 5px;
+  outline: none;
+  color: #9E9C9C;
+}
+
+.search button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  border: 2px solid #2ba700;
+  background-color: #ffffff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search fa-icon {
+  color: #002aac;
+  transition: 0.5s linear;
+}
+
+.search fa-icon:hover {
+  color: #2ba700;
+  transition: 0.5s linear;
+}
+
+/*вход и модальное окно*/
+.signin {
+  font-size: 0.9em;
+}
+
+.signin p, .signin fa-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.signin fa-icon {
+  font-size: 1.7em;
+  padding-right: 10px;
+}
+
+.modal-header h1 {
+  display: block;
+  margin: 0 auto;
+}
+
+.modal-header .close {
+  margin: -1rem -1rem -1rem 0;
+}
+
+.btn-modal {
+  background-color: #2ba700;
+  color: #fff;
+  padding-right: 35px;
+  padding-left: 35px;
+  transition: 0.5s linear;
+}
+
+.btn-modal:hover {
+  background-color: #002aac;
+  transition: 0.5s linear;
+  cursor: pointer;
+}
+
+.btn-modal:disabled {
+  background-color: #525151;
+}
+.btn-modal:disabled:hover {
+  background-color: #525151;
+}
+
+.link_registration_forget{
+  font-size: 0.9em;
+}
+
+.modal-footer {
+  border-top: none;
+  display: block;
+  text-align: center;
+}
+
+.modal-footer fa-icon {
+  /*display: block;*/
+  transition: 0.5s  linear;
+
+}
+.modal-footer fa-icon:hover {
+  color: #002aac;
+  transition: 0.5s linear;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+.little a {
+  border-bottom: 1px white dashed;
+}
+
+.little a:hover {
+  border-bottom: none;
+  text-decoration: none;
+}
+
+/*иконки*/
+.icon fa-icon {
+  font-size: 1.7em;
+  padding-right: 20px;
+  transition: 0.5s linear;
+}
+
+.icon fa-icon:hover {
+  color: #002aac;
+  transition: 0.5s linear;
+}
+

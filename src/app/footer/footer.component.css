@@ -1,0 +1,22 @@
+footer {
+  background-color: #002aac;
+  color: #fff;
+  padding: 25px 0 40px 0;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer fa-icon {
+  display: inline-block;
+  margin: 20px 20px 0 0;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+}
