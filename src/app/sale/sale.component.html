@@ -1,12 +1,19 @@
 <div class="row row-cols-lg-5 row-cols-xl-6">
   <div class="col mb-4" *ngFor="let item of list | slice : startPage:paginationLimit">
     <div class="card">
-      <a routerLink="">
+      <a
+        [title]="item.title + ' details'"
+        [routerLink]="['/products', item.id]">
         <img src="{{item.img}}" class="card-img-top" alt="">
       </a>
       <span class="sale">-{{item.sale}}%</span>
       <div class="card-body">
-        <p class="card-title"><a routerLink="">{{item.title}}</a></p>
+        <p class="card-title">
+          <a
+            [title]="item.title + ' details'"
+            [routerLink]="['/products', item.id]">{{item.title}}
+          </a>
+        </p>
         <div>
           <p class="old">{{item.old}} грн</p>
           <p class="new">{{item.new}} грн</p>
@@ -15,7 +22,8 @@
     </div>
   </div>
 </div>
-<a class="btn all_sale" *ngIf ="paginationLimit < list.length" (click)="showMoreItems()" data-toggle="collapse" href="#all_sale" role="button" aria-expanded="false"
+<a class="btn all_sale" *ngIf="paginationLimit < list.length" (click)="showMoreItems()" data-toggle="collapse"
+   href="#all_sale" role="button" aria-expanded="false"
    aria-controls="all_sale">
   <svg viewBox="-15 -15 30 30" width="100" height="100">
     <circle r="7"></circle>

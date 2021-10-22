@@ -1,3 +1,33 @@
 <app-header></app-header>
-
+<div class="container-fluid">
+<!-- автоматизировать путь -->
+  <div aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a routerLink="">Главная</a></li>
+      <li class="breadcrumb-item"><a href="products/">Каталог</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Какой-то товар</li>
+    </ol>
+  </div>
+  <div class="content">
+    <h1>Товар</h1>
+    <div class="col-12 product border d-flex mb-5">
+      <div class="col-7 product-img">
+        <img src="https://1-m.com.ua/image/cache/catalog/p/39/39417/1598238989394170-700x400.webp" alt="">
+      </div>
+      <div class="col-5 product-info">
+        <div class="price-block pt-4 d-flex justify-content-between">
+          <span class="product-info-price">750<sup>₴</sup></span>
+          <span class="availability">В наличии</span>
+        </div>
+        <div class="mt-4">
+          <button class="btn btn-success">Купить</button>
+        </div>
+        <div class="mt-4 action d-flex justify-content-between p-3">
+          <a href="#" ><fa-icon [icon]="['fas', 'heart']"></fa-icon> В избранное</a>
+          <a href="#" ><fa-icon [icon]="['fas', 'balance-scale']"></fa-icon> В сравнение</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <app-footer></app-footer>

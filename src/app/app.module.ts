@@ -23,6 +23,7 @@ import { faCcMastercard } from '@fortawesome/free-brands-svg-icons';
 import { faFacebook} from '@fortawesome/free-brands-svg-icons';
 import { faTelegram} from '@fortawesome/free-brands-svg-icons';
 import { faInstagram} from '@fortawesome/free-brands-svg-icons';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTabsModule} from "@angular/material/tabs";
 import {CarouselModule} from "ngx-bootstrap/carousel";
@@ -31,6 +32,7 @@ import { NewComponent } from './new/new.component';
 import { NewsComponent } from './news/news.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import { ProductComponent } from './product/product.component';
+import { ProductListComponent } from './product-list/product-list.component';
 
 
 @NgModule({
@@ -42,7 +44,8 @@ import { ProductComponent } from './product/product.component';
     SaleComponent,
     NewComponent,
     NewsComponent,
-    ProductComponent
+    ProductComponent,
+    ProductListComponent
   ],
     imports: [
         BrowserModule,
@@ -75,5 +78,6 @@ export class AppModule {
     library.addIcons(faFacebook);
     library.addIcons(faTelegram);
     library.addIcons(faInstagram);
+    library.addIcons(faHeart);
   }
 }
